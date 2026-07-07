@@ -23,7 +23,7 @@
     enabled: true
 
 - name: insert firewalld rule
-  ansible.posix.firewalld:
+  ansible.builtin.firewalld:
     port: "{{ mysql_port }}/tcp"
     permanent: true
     state: enabled
